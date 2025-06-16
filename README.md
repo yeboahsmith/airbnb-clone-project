@@ -23,10 +23,23 @@ payment processing - to help make payement after an apartment has been booked
 user  - user registration and authentication system
 reation example :a user can login and his info will be saved in the user management and then he can book an apartment through the booking system
 
-## Feature breakdown
+## Feature Breakdown
 User Management: Implement a secure system for user registration, authentication, and profile management.
 Property Management: Develop features for property listing creation, updates, and retrieval.
 Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
 Payment Processing: Integrate a payment system to handle transactions and record payment details.
 Review System: Allow users to leave reviews and ratings for properties.
 Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
+# API Security
+User Authentication: Implement a secure authentication system to verify user identities when they log in. This typically involves using a username/password combination or integrating with social login providers.
+Secure Storage: Store user credentials securely, preferably using hashing and salting techniques to protect against breaches. 
+Role-Based Access Control (RBAC): Define roles (e.g., guest, host, admin) and assign permissions to each role. Implement authorization checks within API endpoints to ensure that users only access resources they are authorized to view  or modify.
+Validate all User Inputs: Thoroughly validate all data submitted through API requests to prevent injection attacks (e.g., SQL injection, cross-site scripting).
+Database Security: Secure the database by using strong passwords, encrypting sensitive data (e.g., credit card information), and implementing regular backups.
+
+# CI/CD pipeline 
+CI/CD pipelines automate the process of integrating, testing, and deploying code changes, making software development faster, more reliable, and more efficient. For an Airbnb clone, this translates to quicker feature releases, reduced errors, and increased developer productivity. By automating these processes, CI/CD pipelines enable teams to respond faster to user needs, improve code quality, and minimize the risk associated with deployments. 
+
+
+
